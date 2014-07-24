@@ -1,4 +1,7 @@
 Geraldoapp::Application.routes.draw do
+  resources :individuos
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

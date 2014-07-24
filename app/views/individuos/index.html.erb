@@ -1,0 +1,29 @@
+<h1>Listing individuos</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Telefone</th>
+    <th>Email</th>
+    <th>Observacao</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @individuos.each do |individuo| %>
+  <tr>
+    <td><%= individuo.nome %></td>
+    <td><%= individuo.telefone %></td>
+    <td><%= individuo.email %></td>
+    <td><%= individuo.observacao %></td>
+    <td><%= link_to 'Show', individuo %></td>
+    <td><%= link_to 'Edit', edit_individuo_path(individuo) %></td>
+    <td><%= link_to 'Destroy', individuo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Individuo', new_individuo_path %>
