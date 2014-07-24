@@ -4,7 +4,7 @@
 * [Vagrant](http://vagrantup.com/)
 
 ## Como instalar o ambiente
-
+## É imprescindível a que seja feito um fork do projeto origina
     git clone https://github.com/shayani/geraldoapp geraldoapp
     cd geraldoapp
     vagrant up
